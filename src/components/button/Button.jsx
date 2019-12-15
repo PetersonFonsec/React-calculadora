@@ -3,7 +3,9 @@ import './Button.css'
 
 export default props => 
     <button 
-        onClick={ props.onClick(props.label)}
+        onClick={ () => props.click( props.label ) }
         className={`button ${ props.className }`}> 
+
         { props.label } 
+
     </button>
